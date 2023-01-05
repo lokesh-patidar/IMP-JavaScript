@@ -1,0 +1,495 @@
+<script>
+    //[1] When we are going to compare two different memory locations
+    // let a = [];
+    // let b = [];
+    // console.log( a == b );
+    // console.log( a === b );
+</script>
+
+<script>
+    // [2] related to upper one but here memory location won't change:-
+    // let a = [];
+    // let b = a;
+    // console.log( a == b );
+    // console.log( a === b );
+</script>
+
+<script>
+    // let a = [20];
+    // let b = [20];
+    // console.log( a[0] == b[0] );
+    // console.log( a[0] === b[0] );
+</script>
+
+<script>
+    // [4] spread operator is here which will destructure our array and object and the a is given us to distract ourself.
+    // let z = [1,2,3,4];
+    // let a = { name: 'Lokesh' };
+    // console.log(...z);
+</script>
+
+<script>
+    // [5] NAN ia type of number we will get it when we will perform any mathematical operation on non-mathematical expressions
+    // it is a special type of number in javascript
+    // console.log(typeof(NaN));
+</script>
+
+<script></script>
+
+<script>
+    // [6] minus minus will convert in plus.
+    // let data = 10 - -10;
+    // console.log(data);
+</script>
+
+<script>
+    // [7] set will remove duplicates from array and covert it into object.
+    // const set = new Set([1,1,2,3,3,4,5,5]);
+    // console.log(set);
+</script>
+
+<script>
+    // [8] It will print boolean values on the basis of operations if our operation will done then it will return true else it will return false.
+    // let data = {name: 'Lokesh'};
+    // console.log(data);
+    // console.log(delete data.name);
+    // console.log(data);
+</script>
+
+<script>
+    // [9] we can not delete data with the delete operation we can only delete value of data.
+    // let data = {name: 'Lokesh'};
+    // console.log(data);
+    // console.log(delete data);
+    // console.log(data);
+</script>
+
+<script>
+    // [10] when we will do this operation then if we are using only one value inside arr then first value of array of string will come.
+    // const data = ['Lokesh', 'Ali', 'Abhinav', 'Ashish', 'Anjali'];
+    // const [x] = data;
+    // console.log(x);
+    // const [x,y] = data;
+    // console.log(x,y);
+    // const [x,y,z] = data;
+    // console.log(x,y,z);
+    // const [a,b,c,d] = data;
+    // console.log(a,b,c,d);
+</script>
+
+<script>
+    // [11] If we want only second value then just use comma beafore x.
+    // const data = ['Lokesh', 'Ali', 'Abhinav', 'Ashish', 'Anjali'];
+    // const [,x] = data;  // how to get second element.
+    // console.log(x);
+    // const [,,x] = data;
+    // console.log(x);
+</script>
+
+<script>
+    // [12] How to get individual item without dot(.) operator?
+    // const data = { name: 'Lokesh', age: 24, skill: 'js'};
+    // const {name} = data;
+    // const {age} = data;
+    // const {skill} = data;
+    // console.log(name);
+    // console.log(age);
+    // console.log(skill);
+</script>
+
+<script>
+    // [13] Merge two objects:-
+    // let data = {name: 'Lokesh', age: 24, skill: 'js'};
+    // let info = {city: 'Badagaon', mail: 'lokesh@gmail.com'};
+    // data= {...data, ...info};
+    // console.log(data);
+</script>
+
+<script>
+    // [14] What if data will not destruture only info will destructure?
+    // let data = {name: 'Lokesh', age: 24, skill: 'js'};
+    // let info = {city: 'Badagaon', mail: 'lokesh@gmail.com'};
+    // data= {data, ...info};
+    // console.log(data);
+</script>
+
+<script>
+    // [15] merge 2 obj, both objects contains same key then what happen?
+    // position of key will be same as in first obj but vaue will assign from second object.
+    // let data = {name: 'Lokesh', age: 24, skill: 'js'};
+    // let info = {city: 'Badagaon', skill: 'Moongo DB'};
+    // data= {...data, ...info};
+    // console.log(data);
+</script>
+
+<script>
+    // [16] Error-
+    // const name = 'Lokesh';
+    // console.log(name());  // will show error:- (TypeError: name is not a function)
+</script>
+
+<script>
+    // [17] Positive value:-
+    // const result = false || {} || null;
+    // console.log(result);  // will give {}
+
+    // // how to check a positive value:-
+    // if(false){
+    //     console.group("false:- poitive value");
+    // }
+    // if({}){
+    //     console.group("{}:- poitive value");
+    // }
+    // if(null){
+    //     console.group("null:- poitive value");
+    // }
+</script>
+
+<script>
+    // [18] If there is no possitive value thn it wil take last value from here:-
+    // const result = null || false || " ";
+    // console.log(result);  // will give " "
+</script>
+
+<script>
+    // [19] 
+    // const result = [] || 0 || true;
+    // const result = 0 || [] || true;
+    // const result = true || 0 || [];
+    // console.log(result);  // will give []
+</script>
+
+<script>
+    // [20] it will fullfil condition: 
+    // console.log(Promise.resolve(5));
+</script>
+
+<script>
+    // [21] Unicode compaison:- (same unicodes there)
+    // console.log("💝" === "💝");
+</script>
+
+<script>
+    // [22]
+    // JSON.parse() 
+    // what this will do?
+    // (a): Parse JSON to a javascript value.       // `Correct answer`
+    // (b): Parse a javascript object to JSON.
+    // (c): Parses any javascript value to JSON.
+    // (d): Parses JSON to a javascript object only.
+</script>
+
+<script>
+    // [23] In hoisting that is the that we can use any veriable before declearing that we can decleared that later as well 
+    // let name = 'Patidar';
+    // function getName() {
+    //     console.log(name);
+    //     let name = 'Lokesh';
+    // }
+    // getName(); // ReferenceError: Cannot access 'name' before initialization
+</script>
+
+<script>
+    // [24]
+    // let name = `Lokesh`;  // litteral used
+    // function getName() {
+    //     console.log(name);
+    // }
+    // getName();
+</script>
+
+<script>
+    // [25]
+    // console.log(`${(x => x) ('I Love')} to program`);
+</script>
+
+<script>
+    // [26] find correct format?
+    // function sumValues(x,y,z) {
+    //     return x+y+z;
+    // }
+    // (A): sumValues(...[1,2,3])
+    // (B): sumValues([...[1,2,3]])
+    // (C): sumValues([...1,2,3])
+    // (D): sumValues([1,2,3])
+    // console.log(sumValues(...[1,2,3]));
+</script>
+
+<script>
+    // [27]
+    // const name = 'code step by step';
+    // console.log( !typeof name === 'object');
+    // console.log( !typeof name === 'string');
+    // console.log( !typeof name === false );
+</script>
+
+<script>
+    // [28]
+    // const temp = "Subscribe";
+    // const age = 24;
+    // console.log(isNaN(temp));
+    // console.log(isNaN(age));
+</script>
+
+<script>
+    // [29] seal will not allow us to add more keys and value in object we can only update the values of keys which are already present inside it.
+    // let person = { name: "Lokesh" };
+    // // what can modify person object
+    // Object.seal(person); 
+    // person.name = 'Patidar';
+    // person.age = 24;
+    // console.log(person);
+</script>
+
+<script>
+    // [30] Remove first element-
+    // const arr = [1,2,3,4,5,6];
+    // arr.shift();
+    // console.log(arr); 
+</script>
+
+<script>
+    // [30] Remove last element-
+    // const arr = [1,2,3,4,5,6];
+    // arr.pop();
+    // console.log(arr); 
+</script>
+
+<script>
+    // [31]
+    // let data = { name: "Lokesh" };
+    // delete data.name;
+    // console.log(data);
+</script>
+
+<script>
+    // [32] coversion of true to false and vice-versa:-
+    // let data = true;
+    // console.log(!data);
+</script>
+
+<script>
+    // [33] delete method
+    // let data = ['lokesh','deepak','Ali'];
+    // delete data[2];
+    // console.log(data);
+    // console.log(data.length);
+</script>
+
+<script>
+    // [34] merge two array:-
+    // let a = [1,2,4];
+    // let b = [3,5,6];
+    // let c = [...a,...b];
+    // console.log(c);
+</script>
+
+<script>
+    // [35] merge two array:-
+    // let a = [1,2,3,4];
+    // let b = [4,5,6];
+    // let c = [...a,...b];
+    // console.log(c);
+</script>
+
+<script>
+    // [36] Squaring:
+    // let a = 3 ** 3;
+    // console.log(a);
+</script>
+
+<script>
+    // [37] execution stack will form because of that web apis will run after normar execution of code thats why ans will become a=100.
+    // let a = 2;
+    // setTimeout(() => {
+    //     console.log(a);
+    // },0);
+    // a = 100;
+</script>
+
+<script>
+    // [38] A variable won't start from numeric value this is the rule in javascript:
+    // let A10 = "like";
+    // // let 10A = "dislike";
+    // console.log(A10);
+</script>
+
+<script>
+    // [39] difference between backticks and double quotes:
+    // let a = "like";
+    // let b = `like`;
+    // console.log(a === b);
+</script>
+
+<script>
+    // [40] decreament operator:
+    // let a = 1;
+    // let b = 2;
+    // console.log(a === --b);
+</script>
+
+<script>
+    // [41] comparison will start from left to right:
+    // let a = 1;
+    // let b = 1;
+    // let c = 2;
+    // console.log( a === b === --c);
+</script>
+
+<script>
+    // [42] comparison will start from left to right:
+    // let a = 1;
+    // let b = 1;
+    // let c = 2;
+    // console.log( a === b === true);
+</script>
+
+<script>
+    // [42] undefined we have take variable but did notassign value there
+    // console.log(a);
+    // var a;
+</script>
+
+<script>
+    // [43] did not define any variable as b:
+    // console.log(b);  // ReferenceError: b is not defined
+</script>
+
+<script>
+    // [44] nested array:
+    // console.log([[[[]]]]);
+</script>
+
+<script>
+    // [45] how to fined OS name?
+    // navigator.platform
+</script>
+
+<script>
+    // [46] Hoisting rule only for var. literals and constants are not allow to follow hoisting in js.
+    // function fruit(){
+    //     console.log(name);
+    //     console.og(price);
+    //     var name = "Lokesh";
+    //     let price = 40;
+    // };
+    // fruit();
+</script>
+
+<script>
+    // [47] var have globle scope:
+    // for(var i=0; i<3; i++){
+    //     setTimeout(()=>{
+    //         console.log(i);
+    //     },1000);
+    // };
+</script>
+
+<script>
+    // [49] let have block scope:
+    // for(let i=0; i<3; i++){
+    //     setTimeout(()=> console.log(i), 1);
+    // };
+</script>
+
+<script>
+    // [50] 
+    // console.log(+true);
+    // console.log(typeof(+true));
+    // console.log(+false);
+    // console.log(typeof(+false));
+</script>
+
+<script>
+    // [51]
+    // console.log(!"Lokesh");
+    // console.log(typeof("Lokesh"));
+</script>
+
+<script>
+    // [52]
+    // let data = "size";
+    // let bird = {
+    //     size: "small"
+    // }
+    // console.log(bird[data]);
+    // console.log(bird["size"]);
+    // console.log(bird.size);
+    // console.log(bird.data);
+</script>
+
+<script>
+    // [53] object is a reference type of datatype:
+    // let c = {name: "Lokesh"};
+    // let b;
+    // b = c;
+    // c.name = "patidar";
+    // console.log(b.name);
+</script>
+
+<script>
+    // [54] global scope { var can be declared again and again but if we have let in place then we cant }
+    // var x;
+    // var x = 10;
+    // console.log(x);
+</script>
+
+<script>
+    // [55] SyntaxError: Identifier 'x' has already been declared
+    // var x;
+    // let x = 10;
+    // console.log(x);
+</script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
