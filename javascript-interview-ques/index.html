@@ -428,7 +428,7 @@
 </script>
 
 <script>
-    // [54] global scope { var can be declared again and again but if we have let in place then we cant }
+    // [54] global scope { var can be declared again and again but if we have let in place then we can't }
     // var x;
     // var x = 10;
     // console.log(x);
@@ -441,21 +441,70 @@
     // console.log(x);
 </script>
 
-<script></script>
+<script>
+    // [56] new keyword always create an object
+    // let a = 3;
+    // let b = new Number(3);
+    // console.log( a==b );
+    // console.log( a===b );
+</script>
 
-<script></script>
+<script>
+    // [57]
+    // let name;
+    // nmae = {}; // Typo!
+    // console.log(name);
+</script>
 
-<script></script>
+<script>
+    // [58] when we assign something to function:
+    // function fruit(){
+    //     console.log("Woof");
+    // };
+    // fruit.name = "Mango";
+    // fruit();
+</script>
 
-<script></script>
+<script>
+    // [59] 
+    // function sum(a,b){
+    //     return a+b;
+    // };
+    // console.log(sum(2,"2"));
+</script>
 
-<script></script>
+<script>
+    // [60]
+    // let number = 0;
+    // console.log(number++); // we print it then increament happened
+    // console.log(++number); // first increament then print
+    // console.log(number);
+</script>
 
-<script></script>
+<script>
+    // [61] In javascript everything is object
+    // function getAge(...args){
+    //     console.log(args);
+    //     console.log(typeof(args));;
+    // };
+    // getAge();
+</script>
 
-<script></script>
+<script>
+    // [62] concept of hoisting if we are not using "use strict" then it will print age else it will give reference error.
+    // function getAge(){
+    //     'use strict';
+    //     age = 24;
+    //     console.log(age);
+    // };
+    // getAge();
+</script>
 
-<script></script>
+<script>
+    // [63]
+    const sum = eval('10*10+5');
+    console.log(sum);
+</script>
 
 <script></script>
 
