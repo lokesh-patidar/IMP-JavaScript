@@ -1,0 +1,3 @@
+ - Creating First Server Create a node project by npm init -y . 
+ - Create a file named index.js . 
+ - Now for creating the server we can use the inbuilt http module of node. 
