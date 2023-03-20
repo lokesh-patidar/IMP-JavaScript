@@ -180,7 +180,7 @@
 </script>
 
 <script>
-    // [23] In hoisting that is the that we can use any veriable before declearing that we can decleared that later as well
+    // [23] In hoisting that is the that we can use any variable before declearing that we can decleared that later as well
     // let name = 'Patidar';
     // function getName() {
     //     console.log(name);
@@ -287,13 +287,13 @@
 <script>
     // [35] merge two array:-
     // let a = [1,2,3,4];
-    // let b = [4,5,6];
+    // let b = [5,4,6];
     // let c = [...a,...b];
     // console.log(c);
 </script>
 
 <script>
-    // [36] Squaring:
+    // [36] Squaring: // three stars are not valid for any operation.
     // let a = 3 ** 3;
     // console.log(a);
 </script>
@@ -345,7 +345,7 @@
 </script>
 
 <script>
-    // [42] undefined we have take variable but did notassign value there
+    // [42] undefined we have take variable but did not assign value there.
     // console.log(a);
     // var a;
 </script>
@@ -361,15 +361,15 @@
 </script>
 
 <script>
-    // [45] how to fined OS name?
+    // [45] how to find OS name?
     // navigator.platform
 </script>
 
 <script>
-    // [46] Hoisting rule only for var. literals and constants are not allow to follow hoisting in js.
+    // [46] Hoisting rule only for variable, literals and constants are not allow to follow hoisting in js.
     // function fruit(){
     //     console.log(name);
-    //     console.og(price);
+    //     console.log(price);
     //     var name = "Lokesh";
     //     let price = 40;
     // };
@@ -454,11 +454,12 @@
     // [57]
     // let name;
     // nmae = {}; // Typo!
+    // console.log(nmae);
     // console.log(name);
 </script>
 
 <script>
-    // [58] when we assign something to function:
+    // [58] when we assign something to function: nothing will happen
     // function fruit(){
     //     console.log("Woof");
     // };
@@ -578,7 +579,7 @@
     // [72]
     // How long is cool secret accesible.
     // sessionStorage.setItem("cool_secret", 123);
-    // console.log(sessionStorage.getItem("cool_secret"));
+    // console.log(sessionStorage.getItem("cool_secret")); // ans: till browser window closed.
 </script>
 
 <script>
@@ -718,7 +719,7 @@
     // });
 
     // Promise.race([firstPromise, secondPromise])
-    // .then(res => console.log(res))
+    // .then(res => console.log(res));
 </script>
 
 <script>
@@ -736,7 +737,7 @@
 
 <script>
     // [92]
-    // console.log(typeof(3 + 4 + + "5"));
+    // console.log(typeof(3 + 4 + +"5"));
 </script>
 
 <script>
@@ -761,7 +762,7 @@
 </script>
 
 <script>
-    // [95]
+    // [95] If there is no return then ans will be Tata else Kia.
     // function Car(){
     //     this.make = "Tata";
     //     return {make: "Kia"};
@@ -790,7 +791,7 @@
 </script>
 
 <script>
-    // [98] 
+    // [98] doubt
     // var arr = [1];
     // arr.reduce((a,b) => {
     //     console.log(a);
@@ -1055,26 +1056,67 @@
 </script>
 
 <script>
-    // [122]
-    
+    // [122] array and obj both are reference data-type.
+    // let c = ["lokesh", "karmit","deepak","alka"];
+    // let b;
+    // b = c;
+    // c[1] = "patidar";
+    // console.log(b[1]);
 </script>
 
 <script>
     // [123]
+    // (()=> {
+    //     let x = y = 10;
+    // })();
+    // console.log(typeof y);
+    // console.log(y);
 </script>
 
 <script>
     // [124]
+    // (()=> {
+    //     let x = 10;
+    // })();
+
+    // (()=> {
+    //     let x = 10;
+    // })();
+
+    // console.log(typeof x);
 </script>
 
 <script>
     // [125]
+    // (()=> {
+    //     let x = y = 10;
+    // })();
+
+    // (()=> {
+    //     let x = y = 100;
+    // })();
+
+    // console.log(typeof y);
+    // console.log(y);
 </script>
 
 <script>
     // [126]
+    // let x = 100;
+    // (()=> {
+    //     var x = 10;
+    //     console.log(x);
+    // })();
+
+    // console.log(x);
 </script>
 
 <script>
     // [127]
+    // console.log(!true - true);
+</script>
+
+<script>
+    // [128]
+    // console.log(10 + +true);
 </script>
