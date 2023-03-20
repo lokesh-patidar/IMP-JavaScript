@@ -29,7 +29,7 @@
 </script>
 
 <script>
-    // [5] NAN ia type of number we will get it when we will perform any mathematical operation on non-mathematical expressions
+    // [5] NAN is a type of number we will get it when we will perform any mathematical operation on non-mathematical expressions
     // it is a special type of number in javascript
     // console.log(typeof(NaN));
 </script>
@@ -50,7 +50,7 @@
 
 <script>
     // [8] It will print boolean values on the basis of operations if our operation will done then it will return true else it will return false.
-    // let data = {name: 'Lokesh'};
+    // let data = { name: 'Lokesh' };
     // console.log(data);
     // console.log(delete data.name);
     // console.log(data);
@@ -58,7 +58,7 @@
 
 <script>
     // [9] we can not delete data with the delete operation we can only delete value of data.
-    // let data = {name: 'Lokesh'};
+    // let data = { name: 'Lokesh' };
     // console.log(data);
     // console.log(delete data);
     // console.log(data);
@@ -87,7 +87,7 @@
 </script>
 
 <script>
-    // [12] How to get individual item without dot(.) operator?
+    // [12] How to get individual item without dot(.) operator? => destructuring
     // const data = { name: 'Lokesh', age: 24, skill: 'js'};
     // const {name} = data;
     // const {age} = data;
@@ -146,13 +146,13 @@
 </script>
 
 <script>
-    // [18] If there is no possitive value thn it wil take last value from here:-
+    // [18] If there is no possitive value then it wil take last value from here:-
     // const result = null || false || " ";
     // console.log(result);  // will give " "
 </script>
 
 <script>
-    // [19] 
+    // [19]
     // const result = [] || 0 || true;
     // const result = 0 || [] || true;
     // const result = true || 0 || [];
@@ -160,7 +160,7 @@
 </script>
 
 <script>
-    // [20] it will fullfil condition: 
+    // [20] it will fullfil condition:
     // console.log(Promise.resolve(5));
 </script>
 
@@ -171,7 +171,7 @@
 
 <script>
     // [22]
-    // JSON.parse() 
+    // JSON.parse()
     // what this will do?
     // (a): Parse JSON to a javascript value.       // `Correct answer`
     // (b): Parse a javascript object to JSON.
@@ -180,7 +180,7 @@
 </script>
 
 <script>
-    // [23] In hoisting that is the that we can use any veriable before declearing that we can decleared that later as well 
+    // [23] In hoisting that is the that we can use any veriable before declearing that we can decleared that later as well
     // let name = 'Patidar';
     // function getName() {
     //     console.log(name);
@@ -235,7 +235,7 @@
     // [29] seal will not allow us to add more keys and value in object we can only update the values of keys which are already present inside it.
     // let person = { name: "Lokesh" };
     // // what can modify person object
-    // Object.seal(person); 
+    // Object.seal(person);
     // person.name = 'Patidar';
     // person.age = 24;
     // console.log(person);
@@ -393,7 +393,7 @@
 </script>
 
 <script>
-    // [50] 
+    // [50]
     // console.log(+true);
     // console.log(typeof(+true));
     // console.log(+false);
@@ -442,11 +442,12 @@
 </script>
 
 <script>
-    // [56] new keyword always create an object
+    // [56] new keyword always create an object, Number is a constructor
     // let a = 3;
     // let b = new Number(3);
     // console.log( a==b );
     // console.log( a===b );
+    // console.log(typeof(b));
 </script>
 
 <script>
@@ -466,7 +467,7 @@
 </script>
 
 <script>
-    // [59] 
+    // [59]
     // function sum(a,b){
     //     return a+b;
     // };
@@ -501,44 +502,579 @@
 </script>
 
 <script>
-    // [63]
-    const sum = eval('10*10+5');
-    console.log(sum);
+    // [63] eval will conver expression into no. and complete the mathematical operation.
+    // const sum = eval('10*10+5');
+    // console.log(sum);
 </script>
 
-<script></script>
+<script>
+    // [64] empty [], {} are truthy values while "" empty string is a falsy value.
+    // if ({}) {
+    //     console.log("{}:- true");
+    // } else {
+    //     console.log("{}:- false");
+    // }
+</script>
 
-<script></script>
+<script>
+    // [65]
+    // if ([]) {
+    //     console.log("[]:- true");
+    // } else {
+    //     console.log("[]:- false");
+    // }
+</script>
 
-<script></script>
+<script>
+    // [66]
+    // if ('') {
+    //     console.log(" '':- true");
+    // } else {
+    //     console.log(" '':- false");
+    // }
+</script>
 
-<script></script>
+<script>
+    // [67] Hoisting
+    // console.log(name);
+    // var name = "lokesh";
+</script>
 
-<script></script>
+<script>
+    // [68]
+    // var str = "masai";
+    // var {length} = str;
+    // console.log(length);
+</script>
 
-<script></script>
+<script>
+    // [69] Hoisting
+    // function getname(){
+    //   name = "lokesh";
+    // };
+    // getname();
+    // console.log(name);
+</script>
 
-<script></script>
+<script>
+    // [70]
+    // let firstName = "lokesh";
+    // let lastName = "patidar";
+    // let obj = {firstName, lastName};
+    // console.log(obj);
+</script>
 
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
-<script></script>
+<script>
+    // [71]
+    // function value(b) {
+    //     const a = 100;
+    //     a = b;
+    //     return a;
+    // };
+    // console.log(value(100)); // TypeError: Assignment to constant variable.
+</script>
+
+<script>
+    // [72]
+    // How long is cool secret accesible.
+    // sessionStorage.setItem("cool_secret", 123);
+    // console.log(sessionStorage.getItem("cool_secret"));
+</script>
+
+<script>
+    // [73]
+    // const obj = {
+    //     1: "a",
+    //     2: "b",
+    //     3: "c"
+    // };
+    // console.log(obj.hasOwnProperty("1"));
+    // console.log(obj.hasOwnProperty(1));
+</script>
+
+<script>
+    // [74] in obj keys always be unique if have same key then it will keep 1st keys position ans last keys valueto that.
+    // const obj = {
+    //     a: "one",
+    //     b: "two",
+    //     a: "repeat"
+    // };
+    // console.log(obj);
+</script>
+
+<script>
+    // [75]
+    // const foo = () => console.log("first");
+    // const bar = () => setTimeout(() => console.log("second"), 0);
+    // const baz = () => console.log("third");
+    // bar();
+    // foo();
+    // baz();
+</script>
+
+<div>
+    <!-- [76] event bubbling -->
+    <!-- <div onclick="alert('1')">
+        <div onclick="alert('2')">
+            <button onclick="alert('3')">Click!</button>
+        </div>
+    </div> -->
+</div>
+
+<script>
+    // [77]
+    // const person = {name: "Lokesh"};
+    // function sayHii(age){
+    //     return `${this.name} is ${age} old`;
+    // };
+
+    // console.log(sayHii.call(person, 24));
+    // console.log(sayHii.apply(person, [24]));
+    // console.log(sayHii.bind(person, 24)());
+</script>
+
+<script>
+    // [78]
+    // function check(){
+    //     return (()=> 0)();
+    // }
+    // console.log(typeof check());
+</script>
+
+<script>
+    // [79]
+    // function check(){
+    //     return (()=> 0);
+    // }
+    // console.log(typeof check());
+</script>
+
+<script>
+    // [80]
+    // function check(){
+    //     return (()=> 0);
+    // }
+    // console.log(typeof check()());
+</script>
+
+<script>
+    // [81]
+    // console.log(typeof typeof 1);
+</script>
+
+<script>
+    // [82]
+    // const number = [1,2,3];
+    // number[6] = 11;
+    // console.log(number);
+    // console.log(number.length);
+</script>
+
+<script>
+    // [83] Infinite times array will be added at 9th position.
+    // const number = [1,2,3];
+    // number[9] = number;
+    // console.log(number);
+    // console.log(number.length);
+</script>
+
+<script>
+    // [84]
+    // everything in javascript is...
+    // 1) Primitive and object 
+    // 2) function or object 
+    // 3) only object 
+    // 4) number or object 
+    // ans will be 1st one
+</script>
+
+<script>
+    // [86]
+    // console.log(!!null);
+    // console.log(!!'');
+    // console.log(!!1);
+</script>
+
+<script>
+    // [87] setInterval create a unique ID everytime to clear that out.
+    // console.log(setInterval(() => console.log("Hello!"), 1000));
+    // console.log(setInterval(() => console.log("Hello!"), 1000));
+    // console.log(setInterval(() => console.log("Hello!"), 1000));
+</script>
+
+<script>
+    // [88]
+    // console.log([..."Lokesh"]);
+</script>
+
+<script>
+    // [89] jo pehle solve huwa uska output dikhega
+    // const firstPromise = new Promise((resolve, reject) => {
+    //     setTimeout(resolve, 500, "one");
+    // });
+
+    // const secondPromise = new Promise((resolve, reject) => {
+    //     setTimeout(resolve, 100, "two");
+    // });
+
+    // Promise.race([firstPromise, secondPromise])
+    // .then(res => console.log(res))
+</script>
+
+<script>
+    // [90]
+    // let person = {name: "Lokesh"};
+    // const member = [person];
+    // person = null;
+    // console.log(member);
+</script>
+
+<script>
+    // [91]
+    // console.log(typeof 3 + 4 + "5");
+</script>
+
+<script>
+    // [92]
+    // console.log(typeof(3 + 4 + + "5"));
+</script>
+
+<script>
+    // [93]
+    // let data = [1,2,3,"5"].map(item => {
+    //     if(typeof item === 'number') return;
+    //     return item * 2;
+    // });
+    // console.log(data);
+</script>
+
+<script>
+    // [94]
+    // function getInfo(member){
+    //     member.name = "Lokesh";
+    // }
+    // let member = {
+    //     name: "Bansiya"
+    // };
+    // getInfo(member);
+    // console.log(member);
+</script>
+
+<script>
+    // [95]
+    // function Car(){
+    //     this.make = "Tata";
+    //     return {make: "Kia"};
+    // };
+    // const mycar = new Car();
+    // console.log(mycar.make);
+</script>
+
+<script>
+    // [96]
+    // (()=> {
+    //     let x = (y = 10);
+    // })();
+    // console.log(typeof x);
+</script>
+
+<script>
+    // [97] 
+    // let obj = {
+    //     a:10,
+    //     b:10,
+    // }
+    // obj.c = 20;
+    // obj.a = 20;
+    // console.log(obj);
+</script>
+
+<script>
+    // [98] 
+    // var arr = [1];
+    // arr.reduce((a,b) => {
+    //     console.log(a);
+    //     console.log(b);
+    // });
+</script>
+
+<script>
+    // [99] 
+    // console.log(a);
+    // var a = 10;
+    // console.log(b);
+    // let b=10;
+</script>
+
+<script>
+    // [100] 
+    // var arr = [0,0,0,0];
+    // console.log(arr.filter((function(el){ 
+    //     return el;
+    // })));
+</script>
+
+<script>
+    // [101] 
+    // var arr = [1,2,3,4,5];
+    // var newArr = arr.forEach(function(elem){
+    //     return elem*6;
+    // });
+    // console.log(newArr);
+</script>
+
+<script>
+    // [102] 
+    // var arr = [1,2,3,4,5];
+    // console.log(arr.filter());
+</script>
+
+<script>
+    // [103] 
+    // function sum(){
+    //     let a=b=10;
+    //     console.log("a inside function:", a);
+    //     return a;
+    // }
+    // sum();
+    // console.log(a);
+    // console.log(b);
+</script>
+
+<script>
+    // [104] 
+    // for(let i=0; i<10; i++){}
+    // console.log(i);
+</script>
+
+<script>
+    // [105] 
+    // var a=10;
+    // let b=10;
+    // var c=true;
+
+    // if(c===true){
+    //     var a=20;
+    //     let b=20;
+    // }
+    // console.log("a:",a);
+    // console.log("b:",b);
+</script>
+
+<script>
+    // [106] 
+    // var arr = [1,2,3,4,5,6];
+    // var out = arr.filter(function(el){
+    //     return el%3 == 0;
+    // }).reduce(function(acc,ele){
+    //     return acc + ele**3;
+    // },1);
+    // console.log(out);
+</script>
+
+<script>
+    // [107] 
+    // // Is the Below Function "sum" a Higher Order Function ?
+    // function sum(num1,num2){
+    //     return num1 + num2;
+    // }
+
+    // function num(){
+    //     return 5;
+    // }
+    // sum(num(),4);
+</script>
+
+<script> 
+    // [108] 
+    //var myArray = [ null, 1, 5, undefined] how to remove those non number values from the arrray using reduce ?
+    // var myArray = [ null, 1, 5, undefined];
+    // var ans = myArray.reduce(function(el){
+    //     return el;
+    // });
+    // console.log(ans);
+</script>
+
+<script>
+    // [109] 
+    // Is the below "product" function a higher order function ?
+    // function product(num1,num2,num3){
+    //     return num1 * sum(num2,num3);
+    // }
+    // function sum(num1,num2){
+    //     return num1 + num2;
+    // }
+    // console.log(product(5,5,4));
+</script>
+
+<script>
+    // [110] 
+    // function sum(a,b){
+    //     var c=10;
+    //     let d=20;
+    //     return a+b+c;
+    // }
+
+    // console.log("c:",c);
+    // console.log("d:",d);
+</script>
+
+<script>
+    // [111] 
+    // var nums = [1,6,7,8,9];
+    // var ans = nums.map(function(elem,index){
+    //     return index%2 === 0;
+    // });
+    // console.log(ans);
+</script>
+
+<script>
+    // [112] 
+    // // What will be the output of this code ?
+
+    // var arr = [1,2,3,4,5];
+    // var newarr=[];
+    // arr.forEach(function(el,index){
+    //     newarr.push(el);
+    //     if(index === 1){
+    //         return;
+    //     }
+    // });
+    // console.log(arr);
+</script>
+
+<script>
+    // [113] 
+    // let a=10;
+    // let b=10;
+    // if(b===10){
+    //     var a=20;
+    //     console.log("a in-side:",a);
+    // }
+    // console.log("a out-side:",a);
+</script>
+
+<script>
+    // [114] 
+    // var c=0;
+    // function sum(a,b){
+    //     var c=10;
+    //     return a+b+c;
+    // }
+    // console.log(sum(5,5));
+</script>
+
+<script>
+    // [115] 
+    // var func1 = function func2(){
+    //     console.log("clg");
+    // }
+    // func1() 
+    // func2();
+</script>
+
+<script>
+    // [116] 
+    // var arr = [1,2,3,4];
+    // var newArr = arr.map(function(el){
+    //     el*4;
+    // });
+    // console.log(newArr);
+</script>
+
+<script>
+    // [117] 
+    // //The code snippet below can be the explanation for which built in built in array method?
+    // function func(arr,params){
+    //     let newArr = [];
+
+    //     for(var i=0; i<arr.length; i++){
+    //         if(params(arr[i])){
+    //             newArr.push(arr[i]);
+    //         }
+    //     }
+    //     return newArr;
+    // }
+
+    // // 1) map
+    // // 2) forEach
+    // // 3) filter
+</script>
+
+<script>
+    // [118] 
+    // function func(params){
+    //     console.log("clg1");
+    //     return function(){
+    //         console.log("clg2");
+    //         params();
+    //         return function(){
+    //             console.log("clg4");
+    //             return "clg5";
+    //         }
+    //     }
+    // }
+
+    // func(function(){
+    //     console.log("clg3");
+    // })()();
+</script>
+
+<script>
+    // [119] 
+    // func1();
+    // func2();
+    // function func1(){
+    //     console.log("clg1");
+    // };
+    // var func2 = function (){
+    //     console.log("clg2");
+    // }
+</script>
+
+<script>
+    // [120] 
+    // var arr = ["Aman", "Ankush", "Nrupul","Chandra","Albert"];
+    // var newArr = arr.map(function(el){
+    //     if(el[0] === "A"){
+    //         return el;
+    //     }
+    // });
+    // console.log(newArr);
+</script>
+
+<script>
+    // [121] 
+    // var num=10;
+    // var num=20;
+    // console.log(num);
+
+    // let num1=20;
+    // let num1=30;
+    // console.log(num1);
+</script>
+
+<script>
+    // [122]
+    
+</script>
+
+<script>
+    // [123]
+</script>
+
+<script>
+    // [124]
+</script>
+
+<script>
+    // [125]
+</script>
+
+<script>
+    // [126]
+</script>
+
+<script>
+    // [127]
+</script>
