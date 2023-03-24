@@ -1323,3 +1323,70 @@
     // }
     // x();
 </script>
+
+<script>
+    // [146]
+    // function outer() {
+    //     let a = 300;
+    //     function inner(){
+    //         return ++a;
+    //     };
+    //     return inner;
+    // };
+    // let innerFun = outer();
+
+    // console.log(innerFun());
+    // console.log(innerFun());
+    // console.log(innerFun());
+    // console.log(innerFun());
+</script>
+
+<script>
+    // [147]
+    // function getCapture(camera) {
+    //     camera();
+    // }
+    // getCapture(function () {
+    //     console.log('Canon');
+    // });
+</script>
+
+<script>
+    // [149]
+    // function alpha(){
+    //     var name = "Lokesh"
+    //     console.log(this.name);
+    // };
+    // alpha();
+</script>
+
+<script>
+    // [148]
+    // function alpha(){
+    //     var name = "Lokesh"
+    //     console.log(this.name);
+    // };
+    // var name = "Masai";
+    // alpha();
+</script>
+
+<script>
+    // [150]
+    // "use strict";
+    // function alpha(){
+    //     var name = "Lokesh"
+    //     console.log(this.name);
+    // };
+    // var name = "Masai";
+    // alpha();
+</script>
+
+<script>
+    // [151]
+    function value(b){
+        const a = 100;
+        a = b;
+        console.log(a);
+    }
+    value(2);
+</script>
