@@ -1,56 +1,768 @@
 <script>
-    // // undefined and null both are falsy value thats why == give true and === won't.
-    // console.log(undefined == null); // true
-    // console.log(undefined === null); // false
-    // console.log(NaN === NaN); // false
-    // console.log(NaN == NaN); // false
+  // // undefined and null both are falsy value thats why == give true and === won't.
+  // console.log(undefined == null); // true
+  // console.log(undefined === null); // false
+  // console.log(NaN === NaN); // false
+  // console.log(NaN == NaN); // false
 </script>
 
 <script>
-    // memory locations are different
-//    console.log({} === {});
-//    console.log({} == {});
-//    console.log([] === []);
-//    console.log([] == []);
+  // memory locations are different
+  //    console.log({} === {});
+  //    console.log({} == {});
+  //    console.log([] === []);
+  //    console.log([] == []);
 </script>
 
 <script>
-    // arrays are special type of objects.
-    // console.log(typeof([]));
-    // console.log(typeof([]) === typeof({}));
-    // console.log(typeof([]) == typeof({}));
+  // arrays are special type of objects.
+  // console.log(typeof([]));
+  // console.log(typeof([]) === typeof({}));
+  // console.log(typeof([]) == typeof({}));
 </script>
 
 <script>
-    // let key1 = '1';
-    // let key2 = '2';
-    // let obj = {
-    //     key1, key2
-    // };
-    // console.log(obj);
+  // let key1 = '1';
+  // let key2 = '2';
+  // let obj = {
+  //     key1, key2
+  // };
+  // console.log(obj);
 </script>
 
 <script>
-//    var x = 100;
-//    function test(){
-//     var x = i = 10;
-//    }
-//    test();
-//    console.log(x,i);
+  //    var x = 100;
+  //    function test(){
+  //     var x = i = 10;
+  //    }
+  //    test();
+  //    console.log(x,i);
 </script>
 
 <script>
-    // function validateEmail(email) {
-    //     const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        
-    //     if (pattern.test(email)) {
-    //         console.log("Email is valid");
-    //     } 
-    //     else {
-    //         console.log("Email is invalid");
-    //     }
+  // function validateEmail(email) {
+  //     const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  //     if (pattern.test(email)) {
+  //         console.log("Email is valid");
+  //     }
+  //     else {
+  //         console.log("Email is invalid");
+  //     }
+  // }
+
+  // validateEmail("example@gmail1234.com");
+  // validateEmail("example.gmail.com");
+</script>
+
+<script>
+  // let N = 5;
+  // let arr = [3,5,0,9,8];
+  // let bag = "";
+
+  // for(let i=0; i<N-1; i++){
+  //     let min_index = i;
+
+  //     for(let j=i+1; j<N; j++){
+  //         if(arr[j] < arr[min_index]){
+  //             min_index = j;
+  //         }
+  //     }
+  //     swap(arr, min_index, i);
+  // }
+
+  // function swap(arr, A, B){
+  //     let temp = arr[A];
+  //     arr[A] = arr[B];
+  //     arr[B] = temp;
+  // }
+
+  // for(let i=0; i<N; i++){
+  //     bag += arr[i]+" ";
+  // }
+
+  // console.log(bag);
+</script>
+
+<script>
+  // bubble sort
+  // let N = 5;
+  // let arr = [3,5,0,9,8];
+
+  // for(i=0; i<N-1; i++)
+  // {
+  //     for(j=0; j<N-i-1; j++)
+  //     {
+  //         if(arr[j] > arr[j+1])
+  //         {
+  //             swap(arr,j,j+1);
+  //         }
+  //     }
+  // }
+
+  // function swap(arr, A, B){
+  //     var temp = arr[A];
+  //     arr[A] = arr[B];
+  //     arr[B] = temp;
+  // }
+
+  // console.log(arr.join(" "));
+</script>
+
+<script>
+  // function outer(){
+  //     let a = 300;
+  //     function inner(){
+  //         return ++a;
+  //     };
+  //     return inner;
+  // };
+
+  // let innerFunc = outer();
+  // console.log(innerFunc()); // 301
+  // console.log(innerFunc()); // 302
+  // console.log(innerFunc()); // 303
+</script>
+
+<script>
+  // function x(){
+  //     for(let i=1; i<=5; i++){
+  //         function close(x){
+  //             setTimeout(function y(){
+  //                 console.log(x);
+  //             }, x*1000);
+  //         };
+  //         close(i);
+  //     };
+  //     console.log("Lokesh Patidar");
+  // };
+  // x();
+
+  // Output:-
+  // Lokesh Patidar
+  // 1
+  // 2
+  // 3
+  // 4
+  // 5
+</script>
+
+<script>
+  // function x(){
+  //     for(var i=1; i<=5; i++){
+  //         setTimeout(function y(){
+  //         console.log(i);
+  //         }, i * 1000);
+  //     }
+  //     console.log("Lokesh Patidar");
+  // }
+  // x();
+
+  // Output:-
+  // Lokesh Patidar
+  // 6
+  // 6
+  // 6
+  // 6
+  // 6
+</script>
+
+<script>
+  // function x(){
+  //     var i = 1;
+  //     setTimeout(function y(){
+  //         console.log(i);
+  //     },3000);
+  //     console.log("Lokesh Patidar");
+  // }
+  // x();
+
+  // Output:-
+  // Lokesh Patidar
+  // 1
+</script>
+
+<script>
+  // function x(){
+  //     var b = 900;
+  //     function y(){
+  //         var a = 7;
+  //         function z(){
+  //             console.log(a,b);
+  //         }
+  //         z();
+  //     }
+  //     y();
+  // }
+  // x();
+  // output:- 7, 900
+</script>
+
+<script>
+  // function x(){
+  //     var a = 7;
+  //     function y(){
+  //         console.log(a);
+  //     };
+  //     a = 100;
+  //     return y;
+  // };
+  // var z = x();
+  // z();
+  // // output = 100
+</script>
+
+<script>
+  // function x(){
+  //     var a = 7;
+  //     function y(){
+  //         console.log(a);
+  //     };
+  //     y();
+  // };
+  // x();
+  // output = 7
+</script>
+
+<script>
+  // function x(){
+  //     var a = 7;
+  //     function y(){
+  //         console.log(a);
+  //     };
+  //     return y;
+  // };
+  // var z = x();
+  // z();
+  // output = 7
+</script>
+
+<script>
+  // const Car = () => {
+  //     return <h2> Hi, I am also a Car! </h2>;
+  // }
+
+  // import React, { useState } from "react";
+
+  // const FunctionalComponent = () => {
+  //     const [count, setCount] = useState(0);
+
+  //     const increase = () => {
+  //         setCount(count+1);
+  //     }
+
+  //     return (
+  //         <div style={{margin:'50px'}}>
+  //             <h3>Counter App using Functional Component: </h3>
+  //             <h2> {count} </h2>
+  //             <button onClick={increase}>Add</button>
+  //         </div>
+  //     );
+  // }
+
+  // export default FunctionalComponent;
+</script>
+
+<script>
+//   class Car extends React.Component {
+//     render() {
+//       return <h2>Hi, I am a Car!</h2>;
+//     }
+//   }
+//   class Car extends React.Component {
+//     constructor() {
+//       super();
+//       this.state = { color: "red" };
+//     }
+//     render() {
+//       return <h2>I am a Car!</h2>;
+//     }
+//   }
+</script>
+
+<script>
+
+    // function multiply(a, b, c) {
+    //     return a * b * c;
+    // }
+    // console.log(multiply(2, 5, 8));  // 80
+
+</script>
+
+<script>
+//     function multiply(a) {  
+//          return function(b) {  
+//               return function(c) {  
+//                     return a * b * c;  
+//                }  
+//           }  
+//    }  
+//    console.log(multiply(2)(5)(8));  
+
+</script>
+
+<script>
+
+    // function test(arg) {
+    //     console.log(this.number, arg);
     // }
 
-    // validateEmail("example@gmail1234.com");
-    // validateEmail("example.gmail.com"); 
+    // let bindedFn = test.bind({ number: 99 }, "argument");
+
+    // bindedFn(); // 99, "argument"
+
+</script>
+
+<script>
+
+    // function test(...arguments) {
+    //     console.log(this.num, arguments);  //100, [1,2,3]
+    // }
+    // test.apply({ num: 100 }, [1, 2, 3]);
+
+</script>
+
+<script>
+    // function test(arg1, arg2) {
+    //     console.log(this.num, arg1, arg2); // 100, 10, 20
+    // }
+    // test.call({ num: 100 }, 10, 20);
+</script>
+
+<script>
+    // const object1 = {
+    //     property1: 22
+    // };
+
+    // const object2 = Object.freeze(object1);
+    // object2.property1 = 33;
+
+    // // Throws an error in strict mode
+    // console.log(object2.property1);
+</script>
+
+<script>
+    // (function () {
+    //     console.log("Immediately Invoked Function")
+    // })();
+
+    // let sum = (function (a, b) {
+    //     return a + b;
+    // })(10, 20);
+
+    // console.log(sum);
+</script>
+
+<script>
+    // var address = {
+    //     Name: "Lokesh",
+    //     City: "Badagaon",
+    //     State: "MP",
+    //     fullAddress: function () {
+    //         return this.Name + " " + this.City + " " + this.State;
+    //     }
+    // };
+    // var answer = address.fullAddress();
+    // console.log(answer); //  Lokesh Badagaon MP
+
+</script>
+
+<script>
+    // function sleep(time) {
+    //     return new Promise((resolved, rejected) => {
+    //         console.log("pending");
+
+    //         if (typeof (time) !== 'number') {
+    //             rejected("Argument to sleep function should be a number");
+    //             return;
+    //         }
+
+    //         setTimeout(() => {
+    //             resolved();
+    //         }, time);
+
+    //     });
+    // };
+
+    // sleep("1000")
+    //     .then(res => console.log("Successful"))
+    //     .catch(err => console.log(err));
+
+</script>
+<script>
+    // //  Code Snippet - 1
+    // console.log('First');
+    // setTimeout(() => console.log('Second'), 0);
+    // console.log('Third');
+
+    // // Code Snippet - 2
+    // console.log('First');
+    // function secondCall() {
+    //     console.log('Second');
+    // }
+    // setTimeout(secondCall, 2000);
+    // setTimeout(() => console.log('Third'), 0);
+    // console.log('Third');
+
+</script>
+
+<script>
+    // const array1 = [1, 2, 3, 4];
+    // // 0 + 1 + 2 + 3 + 4
+    // const initialValue = 0;
+
+    // const sumWithInitial = array1.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue );
+
+    // console.log(sumWithInitial);    // 10
+</script>
+
+<script>
+    // function getCapture(camera) {
+    //     camera();
+    // }
+
+    // getCapture(function () {
+    //     console.log('Canon');
+    // });
+</script>
+
+<script>
+    // function returnFunc() {
+    //     return function () {
+    //         console.log('Hi');
+    //     }
+    // }
+    // const fn = returnFunc();
+
+    // fn();    // logs 'Hi' in the console
+    // returnFunc()();   // logs 'Hi' in the co
+</script>
+
+<script>
+    // function greet(name, callback) {
+    //     console.log('Hi' + ' ' + name);
+    //     callback();
+    // }
+
+    // // callback function
+    // function callMe() {
+    //     console.log('I am callback function');
+    // }
+
+    // // passing function as an argument
+    // greet('Peter', callMe);
+</script>
+
+<script>
+    // function print() {
+    //     console.log("before: " + variable)
+    //     var variable = "hello"
+    //     console.log("after: " + variable)
+    // }
+
+    // print()
+
+    // // before: undefined
+    // // after: hello.
+</script>
+
+<script>
+    // console.log(test);   // undefined
+    // var test;
+
+    // a = 5;
+    // console.log(a);  // 5
+    // var a;
+</script>
+
+<script>
+    // let person = {
+    //     name: 'john',
+    //     age: 22,
+    // };
+
+    // let person2 = { ...person };
+    // person2.name = 'doe';
+
+    // console.log(person);
+    // console.log(person2);
+
+    /*
+    * {
+    * name: 'john',
+    * age: 22,
+    * }
+    *
+    * {
+    * name: 'doe',
+    * age: 22,
+    * }
+    */
+</script>
+
+<script>
+    // let person = {
+    //     name: 'john',
+    //     age: 22,
+    // };
+
+    // let person2 = person;
+    // console.log(person);
+    // console.log(person2);
+    /*
+    * {
+    * name: 'john',
+    * age: 22,
+    * }
+    *
+    * {
+    * name: 'john',
+    * age: 22,
+    * }
+    */
+
+    // person2.name = 'doe';
+    // console.log(person);
+    // console.log(person2);
+    /*
+    * {
+    * name: 'doe',
+    * age: 22,
+    * }
+    *
+    * {
+    * name: 'doe',
+    * age: 22,
+    * }
+    */
+</script>
+<script>
+    // let person = {
+    //     name: 'john',
+    //     age: 22,
+    // };
+
+    // let person2 = person;
+    // console.log(person);
+    // console.log(person2);
+</script>
+
+<script>
+    // let name = 'john';
+    // let name2 = name;
+    // console.log(name);
+    // console.log(name2);
+</script>
+
+<script>
+    // function display() {
+    //     var wm = new WeakMap();
+    //     var obj1 = {};
+    //     var obj2 = {};
+    //     var obj3 = {};
+    //     wm.set(obj1, "jQuery");
+    //     wm.set(obj2, "AngularJS");
+    //     wm.set(obj3, "Bootstrap");
+    //     console.log(wm.has(obj2));
+    //     console.log(wm);
+    // }
+    // display();
+</script>
+
+<script>
+    // function display() {
+    //     var map = new Map();
+    //     map.set(1, "jQuery");
+    //     map.set(2, "AngularJS");
+    //     map.set(3, "Bootstrap");
+    //     document.writeln(map.get(1) + "<br>");
+    //     document.writeln(map.get(2) + "<br>");
+    //     document.writeln(map.get(3));
+    // }
+    // display();
+</script>
+
+<script>
+    // function display() {
+    //     var ws = new WeakSet();
+    //     var obj1 = {};
+    //     var obj2 = {};
+    //     ws.add(obj1);
+    //     ws.add(obj2);
+    //     //Let's check whether the WeakSet object contains the added object
+    //     console.log(ws.has(obj1)); // true
+    //     console.log(ws.has(obj2));  // true
+    // }
+    // display()
+
+</script>
+
+<script>
+    // function display() {
+    //     var set = new Set();
+    //     set.add("jQuery");
+    //     set.add("AngularJS");
+    //     set.add("Bootstrap");
+    //     for (let elements of set) {
+    //         console.log(elements);
+    //     }
+    // }
+    // display();
+    //  output:-
+    //  jQuery
+    //  AngularJS
+    //  Bootstrap
+</script>
+
+<script>
+    // function display() {
+    //     var arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    //     arr1.copyWithin(4);
+    //     console.log(arr1);
+    // }
+    // display();
+    // output  [1,2,3,4,1,2,3,4,5,6]
+</script>
+
+<script>
+    // function display() {
+    //     document.writeln(10 < 20);//true
+    //     document.writeln(10 < 5);//false
+    // }
+    // display();
+</script>
+
+<script>
+    // function display() {
+    //     var x = 102;  //integer value
+    //     var y = 102.7;   //floating point value
+    //     var z = 13e4;   //exponent value, output: 130000
+    //     var n = new Number(16);  //integer value by number object
+    //     console.log(x + " " + y + " " + z + " " + n);
+    // }
+    // display();
+
+</script>
+
+<script>
+    // function display() {
+    //     var date = new Date();
+    //     var day = date.getDate();
+    //     var month = date.getMonth() + 1;
+    //     var year = date.getFullYear();
+    //     console.log("Date is: " + day + "/" + month + "/" + year); // Date is: 25/3/2023
+    // }
+    // display();
+</script>
+
+<script>
+    // function display() {
+    //     x = 10;
+    //     y = 15;
+    //     z = x + y;
+    //     debugger;
+    //     console.log(z);
+    //     console.log(a);
+    // }
+    // display();
+
+</script>
+
+<script>
+    // var address = {
+    //     company: "Masai",
+    //     city: "Bangalore",
+    //     state: "Karnataka",
+    //     fullAddress: function () {
+    //         return this.company + " " + this.city + " " + this.state;
+    //     }
+    // };
+    // var fetch = address.fullAddress();
+    // console.log(fetch);  // Masai Bangalore Karnataka
+
+</script>
+
+<script>
+    // var num = -5;
+    // function display() {
+    //     console.log(num / 0);
+    // }
+    // display();       //expected output: -Infinity  
+</script>
+
+<script>
+    // function display() {
+    //     console.log("10" + 20 + 30);  // 102030
+    // }
+    // display();
+</script>
+
+<script>
+    // function display() {
+    //     document.writeln(10 + 20 + "30"); // 3030
+    // }
+    // display();  
+</script>
+
+<script>
+    // function number(num) {
+    //     if (isNaN(num)) {
+    //         return "Not a Number";
+    //     }
+    //     return "Number";
+    // }
+
+    // console.log(number('1000F'));      // expected output: "Not a Number"
+    // console.log(number('1000'));       // expected output: "Number" 
+</script>
+
+<script>
+    // function Person(first, last, age, eyecolor) {
+    //     this.firstName = first;
+    //     this.lastName = last;
+    //     this.age = age;
+    //     this.eyeColor = eyecolor;
+    // }
+
+    // Person.prototype.name = function () {
+    //     return this.firstName + " " + this.lastName;
+    // };
+
+    // const p1 = new Person("Lokesh", "Patidar", 24, "black");
+    // console.log(p1);
+</script>
+
+<script>
+    // const me = Object.create({});
+    // me.name = 'Matthew';
+    // me.isHuman = true;
+
+    // console.log(me);
+</script>
+
+<script>
+    // var colours = ["Red", "Yellow", "Green", "Orange"];
+    // var cities = ["Noida", "Delhi", "Ghaziabad"];
+
+    // alert(colours[2]);   // Output: Green
+    // alert(cities[1]);   // Output: Delhi  
+</script>
+
+<script>
+    // var obj1 = {
+    //     x: 123,
+    //     y: "Welcome to JavaTpoint",
+    //     z: function () {
+    //         return this.x;
+    //     }
+    // }
+</script>
+
+<script>
+    // Var msg = "JavaScript is a case-sensitive language";    // Here, var should be used to declare a variable  
+
+    // function display() {
+    //     document.writeln(msg);     // It will not display the result.  (syntaxerror)
+    // }
+    // display();
 </script>
